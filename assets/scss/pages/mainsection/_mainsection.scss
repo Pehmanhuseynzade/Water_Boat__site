@@ -1,0 +1,77 @@
+main{
+    width: 100%;
+    height: 600px;
+#carousel{
+    width: 100%;
+    height: 600px;
+    background-image: url("https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg");
+    background-repeat: round;
+    object-fit: cover;
+    filter: brightness(92%);
+    .title{
+            font-size: 30px;
+            @extend %center-div;
+            padding-top: 120px;
+            color: hsl(0,100%,100%)
+       }
+       p{
+           @extend %center-div;
+           font-size: 20px;
+           color: white;
+           font-family: $location-font;
+       }
+       .button{
+            @extend %center-div;
+            width: 100%;
+            height: 40px;
+               border-radius: 5px;
+               padding-top: 2px;
+               padding-left: 2px;
+               color: white;
+               
+               button{
+                    width: 160px;
+                    height: 50px;
+                    border-radius: 5px;
+                    padding-top: 2px;
+                    padding-left: 2px;
+                    color: white;
+                    border: none;
+                    background-color: #196d87;
+                    transition: all 0.3s ease;
+                    margin-top: 30px;
+                    &:hover{
+                        background-color: #5290a2;
+                    }
+                }
+               a{
+                   color: white;
+               }
+        }
+          .arrow_buttons{
+                display: none;
+                justify-content: space-between;
+                .fa-solid{
+                    font-size: 40px;
+                    padding-left: 11px;
+                    padding-top: 11px;
+                    width: 60px;
+                    height: 60px;
+                    background-color: white;
+                    border-radius: 50%;
+                    transition: .3s;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    &:hover{
+                        background-color: #5290a2;
+                    }
+                }
+            }
+            
+
+    }
+    #carousel:hover > .arrow_buttons{
+        display: flex !important;
+        justify-content: space-between;
+    }
+}
