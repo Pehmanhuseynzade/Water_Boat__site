@@ -1,0 +1,208 @@
+@import "../mixin";
+@include for-laptop{
+    header{
+        width: 100%;
+        .information{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        gap: 120px;
+            .infowords{
+                display: none;
+                gap: 100px;
+                .info{
+                    display: none;
+                    gap: 20px;
+                .headicon{
+                    width: 40px;
+                    height: 40px;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: $icon-bcg-color;
+                    color: white;
+                }
+                                .headinfo{
+                        h3{
+                            font-family: $adress-font;
+                        }
+                        p{
+                            font-family: $location-font;
+                        }
+                    }
+            }}
+            .hamburger{
+                display: block;
+                font-size: 20px;
+            }
+        }
+        
+        .navbar{
+        width: 100%;
+        background-color: $nav-bcg-color;
+        display: none;
+        padding: 30px;
+        gap: 30px;
+        a{
+            color: white;
+            font-family: $nav-font;
+        }
+        .after::after{
+            content: " ";
+            display: block;
+            width: 100%;
+            border: 1px solid white;
+        }
+        }
+
+    }
+
+}
+@include for-tablet{
+    header{
+        width: 100%;
+        .information{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        gap: 120px;
+            .infowords{
+                display: none;
+                gap: 100px;
+                .info{
+                    display: none;
+                    gap: 20px;
+                .headicon{
+                    width: 40px;
+                    height: 40px;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: $icon-bcg-color;
+                    color: white;
+                }
+                                .headinfo{
+                        h3{
+                            font-family: $adress-font;
+                        }
+                        p{
+                            font-family: $location-font;
+                        }
+                    }
+            }}
+            .hamburger{
+                display: block;
+                font-size: 20px;
+            }
+        }
+        
+        .navbar{
+        width: 100%;
+        background-color: $nav-bcg-color;
+        display: none;
+        padding: 30px;
+        gap: 30px;
+        a{
+            color: white;
+            font-family: $nav-font;
+        }
+        .after::after{
+            content: " ";
+            display: block;
+            width: 100%;
+            border: 1px solid white;
+        }
+        }
+
+    }
+
+}
+
+@include for-phone{
+    header{
+        width: 100%;
+        .information{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        gap: 120px;
+            .infowords{
+                display: none;
+                gap: 100px;
+                .info{
+                    display: none;
+                    gap: 20px;
+                .headicon{
+                    width: 40px;
+                    height: 40px;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: $icon-bcg-color;
+                    color: white;
+                }
+                                .headinfo{
+                        h3{
+                            font-family: $adress-font;
+                        }
+                        p{
+                            font-family: $location-font;
+                        }
+                    }
+            }}
+            .hamburger{
+                display: block;
+                font-size: 20px;
+            }
+        }
+        
+        .navbar{
+        width: 100%;
+        background-color: $nav-bcg-color;
+        display: none;
+        padding: 30px;
+        gap: 30px;
+        a{
+            color: white;
+            font-family: $nav-font;
+        }
+        .after::after{
+            content: " ";
+            display: block;
+            width: 100%;
+            border: 1px solid white;
+        }
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .navbar{
+//     .infowords{
+//         display: flex;
+//         gap: 100px;
+// }
+// @include for-laptop{
+//     display: none;              
+// }
+// }
+
+
