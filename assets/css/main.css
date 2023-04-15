@@ -50,7 +50,6 @@ header .information .hamburger {
 header .navbar {
   width: 100%;
   background-color: #1089ff;
-  position: sticky;
   z-index: 99;
   padding: 30px;
   gap: 30px;
@@ -112,7 +111,7 @@ main #carousel .button button:hover {
   background-color: #5290a2;
 }
 main #carousel .button a {
-  color: white;
+  color: black;
 }
 main #carousel .arrow_buttons {
   display: none;
@@ -138,6 +137,77 @@ main #carousel:hover > .arrow_buttons {
   justify-content: space-between;
 }
 
+section {
+  width: 100%;
+}
+section #hero {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+  gap: 20px;
+}
+section #hero #image {
+  width: 550px;
+  height: 350px;
+  background-image: url("https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg");
+  background-size: cover;
+  object-fit: cover;
+}
+section #hero .about-us p:nth-child(1) {
+  font-family: "Dancing Script", cursive;
+  color: #1089ff;
+}
+section #hero .about-us p:nth-child(1)::selection {
+  background-color: black;
+}
+section #hero .about-us h1::selection {
+  background-color: black;
+}
+section #hero .about-us .h_line {
+  margin-top: 20px;
+  width: 15%;
+  border: 2px solid #1089ff;
+}
+section #hero .about-us .for-margin {
+  margin-top: 25px;
+}
+section #hero .about-us .first-sentences {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 2;
+}
+section #hero .about-us .second-sentences {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 2;
+}
+section #hero .about-us .learn {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-left: 2px;
+  color: white;
+}
+section #hero .about-us .learn button {
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+  padding-top: 2px;
+  padding-left: 2px;
+  color: white;
+  border: none;
+  background-color: #196d87;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+}
+section #hero .about-us .learn button:hover {
+  background-color: #5290a2;
+}
+section #hero .about-us .learn button a {
+  color: white;
+}
+
 @media (max-width: 992px) {
   header .information {
     justify-content: space-around;
@@ -159,5 +229,31 @@ main #carousel:hover > .arrow_buttons {
   }
   main p {
     font-size: 16px !important;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  section #image {
+    width: 450px !important;
+    height: 220px !important;
+    object-fit: cover;
+    background-size: cover;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  section #hero {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  section #image {
+    width: 450px !important;
+    height: 220px !important;
+    object-fit: cover;
+    background-size: cover;
+  }
+  section #hero {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */

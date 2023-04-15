@@ -34,12 +34,13 @@ header{
             font-size: 20px;
         }
     }
-    
     .navbar{
+    // position: sticky;
+    // top: 0;
+    // z-index: 99;
     width: 100%;
     background-color: $nav-bcg-color;
     @extend    %center-div;
-    position: sticky;
     z-index: 99;
     padding: 30px;
     gap: 30px;
