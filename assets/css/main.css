@@ -111,7 +111,7 @@ main #carousel .button button:hover {
   background-color: #5290a2;
 }
 main #carousel .button a {
-  color: black;
+  color: white;
 }
 main #carousel .arrow_buttons {
   display: none;
@@ -340,6 +340,154 @@ section #hero .about-us .learn button a {
   font-size: 18px;
 }
 
+.form-part {
+  width: 100%;
+  height: auto;
+  margin-top: 200px;
+}
+.form-part .form-and-image {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.form-part .form-and-image #form-image {
+  width: 550px;
+  height: 400px;
+  background-image: url("https://preview.colorlib.com/theme/waterboat/images/hero_1.jpg");
+  background-size: cover;
+  object-fit: cover;
+}
+.form-part .form-and-image p:nth-child(1) {
+  font-family: "Dancing Script", cursive;
+  color: #1089ff;
+}
+.form-part .form-and-image p:nth-child(1)::selection {
+  background-color: black;
+}
+.form-part .form-and-image h1 {
+  font-size: 30px;
+}
+.form-part .form-and-image .h_line {
+  margin-top: 20px;
+  width: 45%;
+  border: 1px solid #1089ff;
+}
+.form-part .form-and-image .form {
+  width: 100%;
+  margin-top: 10px;
+}
+.form-part .form-and-image .form form {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+}
+.form-part .form-and-image .form form .name-number {
+  display: flex;
+  gap: 10px;
+}
+.form-part .form-and-image .form form .name-number .name label {
+  font-size: 30px;
+}
+.form-part .form-and-image .form form .name-number .name input[type=text] {
+  width: 60%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+.form-part .form-and-image .form form .name-number .number {
+  font-size: 30px;
+}
+.form-part .form-and-image .form form .name-number input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.form-part .form-and-image .date {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  display: flex;
+}
+.form-part .form-and-image .date .from label {
+  font-size: 30px;
+}
+.form-part .form-and-image .date .from input[type=date] {
+  margin-top: 8px;
+  width: 70%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+.form-part .form-and-image .date .to {
+  margin-left: 52px;
+}
+.form-part .form-and-image .date .to label {
+  font-size: 30px;
+}
+.form-part .form-and-image .date .to input[type=date] {
+  margin-top: 8px;
+  width: 90%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+.form-part .form-and-image .options {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+}
+.form-part .form-and-image .options select {
+  margin-top: 8px;
+  width: 75%;
+  padding: 16px 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  background-color: white;
+}
+.form-part .form-and-image .mail-phone {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  display: flex;
+}
+.form-part .form-and-image .mail-phone .mail label {
+  font-size: 30px;
+}
+.form-part .form-and-image .mail-phone .mail input[type=email] {
+  margin-top: 8px;
+  width: 90%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+.form-part .form-and-image .mail-phone .phone {
+  margin-left: 52px;
+}
+.form-part .form-and-image .mail-phone .phone label {
+  font-size: 30px;
+}
+.form-part .form-and-image .mail-phone .phone input[type=tel] {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  margin-top: 8px;
+  width: 90%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+.form-part .form-and-image .notes {
+  margin-top: 20px;
+}
+.form-part .form-and-image .notes textarea {
+  width: 620px;
+  height: 200px;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+}
+.form-part .form-and-image .row input {
+  color: white;
+  background-color: #1089ff;
+  width: 120px;
+  height: 50px;
+  border: 5px;
+}
+
 @media (max-width: 992px) {
   header .information {
     justify-content: space-around;
@@ -427,5 +575,11 @@ section #hero .about-us .learn button a {
 @media (max-width: 992px) {
   .cards .all--cards {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .form-part .form-part #form-image {
+    width: 250px !important;
+    height: 250px !important;
   }
 }/*# sourceMappingURL=main.css.map */

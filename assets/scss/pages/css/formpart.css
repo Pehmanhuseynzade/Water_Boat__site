@@ -1,0 +1,17 @@
+.form-part {
+  width: 100%;
+  background-color: aqua;
+  height: 100px;
+}
+.form-part .form-and-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-part .form-and-image .form-image {
+  width: 500px;
+  height: 400px;
+  background-image: url("https://preview.colorlib.com/theme/waterboat/images/hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=formpart.css.map */
