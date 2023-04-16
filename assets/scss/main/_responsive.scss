@@ -73,3 +73,43 @@
     }
 }
 
+@include for-laptop{
+    .statistic{
+        #photo{
+            height: 280px !important;
+            flex-wrap: wrap;
+            &::after{
+                height: 280px !important;
+                display: block;
+    
+            }
+        }
+    }
+}
+@include for-tablet{
+    .statistic{
+        #photo{
+            height: 360px !important;
+            flex-wrap: wrap;
+            &::after{
+                height: 360px !important;
+                display: block;
+    
+            }
+        }
+    }
+}
+@include for-phone{
+    .statistic{
+        #photo{
+            height: 450px !important;
+            flex-wrap: wrap;
+            &::after{
+                height: 450px !important;
+                display: block;
+    
+            }
+        }
+    }
+}
+

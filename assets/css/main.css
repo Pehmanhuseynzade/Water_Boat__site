@@ -227,6 +227,44 @@ section #hero .about-us .learn button a {
   margin-top: 25px;
 }
 
+.statistic {
+  width: 100%;
+}
+.statistic #static-info #photo {
+  width: 100%;
+  height: 220px;
+  margin-top: 30px;
+  background-image: url("https://preview.colorlib.com/theme/waterboat/images/hero_1.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 50px;
+  font-weight: bold;
+}
+.statistic #static-info #photo::after {
+  position: absolute;
+  content: "";
+  height: 220px;
+  width: 100%;
+  display: block;
+  background-color: rgba(0, 0, 255, 0.267);
+  z-index: 0;
+}
+.statistic #static-info #photo h2 {
+  font-size: 40px;
+  z-index: 99;
+}
+.statistic #static-info #photo p {
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 99;
+}
+
 @media (max-width: 992px) {
   header .information {
     justify-content: space-around;
@@ -279,5 +317,35 @@ section #hero .about-us .learn button a {
 @media (max-width: 992px) {
   .other-section .other-infotmations {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .statistic #photo {
+    height: 280px !important;
+    flex-wrap: wrap;
+  }
+  .statistic #photo::after {
+    height: 280px !important;
+    display: block;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  .statistic #photo {
+    height: 360px !important;
+    flex-wrap: wrap;
+  }
+  .statistic #photo::after {
+    height: 360px !important;
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .statistic #photo {
+    height: 450px !important;
+    flex-wrap: wrap;
+  }
+  .statistic #photo::after {
+    height: 450px !important;
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */
