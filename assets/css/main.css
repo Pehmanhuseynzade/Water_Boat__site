@@ -285,8 +285,7 @@ section #hero .about-us .learn button a {
   height: 220px;
   width: 100%;
   display: block;
-  background-color: rgba(0, 0, 255, 0.267);
-  z-index: 0;
+  background-color: rgba(0, 0, 255, 0.584);
 }
 
 .title_destinations {

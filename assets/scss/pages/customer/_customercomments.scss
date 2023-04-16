@@ -67,15 +67,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // &::after{
-        //     position: absolute;
-        //     content: '';
-        //     height: 230px;
-        //     width: 100%;
-        //     display: block;
-        //     background-color: rgba(0, 0, 255, 0.34);
-
-        // }
         .mytext{
             h1{
                 @extend %center-div;
