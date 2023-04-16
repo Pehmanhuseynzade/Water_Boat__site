@@ -1,0 +1,123 @@
+.customers{
+    width: 100%;
+    .customer{
+        margin-top: 50px;
+        @extend %center-div;
+        gap: 30px;
+        .inf{
+            width: 250px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: space-between;
+            justify-content: center;
+            @extend %center-div;
+            padding-left: 10px;
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+            .photo-text{
+                display: flex;
+                align-items: end;
+                margin-top: 5px;
+            }
+            .blockquote{
+                border: 1px solid #ccc;
+                padding: 30px;
+                border-radius: 4px;
+                font-size: 16px;
+                position: relative;
+            }
+            .persone_name{
+                margin-right: 1rem!important;
+                font-size: 15px;
+                color: #000;
+                margin-bottom: 4px;
+            }
+            .position_name{
+                font-size: 14px;
+                color: #ccc;
+            }
+            .text_box{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .photos{
+                margin-right: 1rem!important;
+            }
+        }
+    }}
+
+
+.contact_us{
+    margin-top: 200px;
+    width: 100%;
+    #contact{
+        background-image: url("https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg");
+        width: 100%;
+        height: 230px;
+        background-position:start;
+        background-attachment: fixed;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // &::after{
+        //     position: absolute;
+        //     content: '';
+        //     height: 230px;
+        //     width: 100%;
+        //     display: block;
+        //     background-color: rgba(0, 0, 255, 0.34);
+
+        // }
+        .mytext{
+            h1{
+                @extend %center-div;
+                font-size: 40px;
+                color: white;
+                font-family: $location-font;
+            }
+           p{
+               @extend %center-div;
+               font-size: 20px;
+               color: white;
+               font-family: $location-font;
+           }
+           .button{
+                @extend %center-div;
+                width: 100%;
+                height: 40px;
+                   border-radius: 5px;
+                   padding-top: 2px;
+                   padding-left: 2px;
+                   color: white;
+                   
+                   button{
+                        width: 160px;
+                        height: 50px;
+                        border-radius: 5px;
+                        padding-top: 2px;
+                        padding-left: 2px;
+                        color: white;
+                        border: none;
+                        background-color: orange;
+                        transition: all 0.3s ease;
+                        margin-top: 30px;
+                        &:hover{
+                            background-color: rgba(255, 166, 0, 0.884);
+                        }
+                        a{
+                            color: white;
+                        }
+
+                    }
+        }
+
+    }
+}}
