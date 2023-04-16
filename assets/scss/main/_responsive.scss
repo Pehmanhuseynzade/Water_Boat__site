@@ -139,3 +139,12 @@
             }
         }
     }
+
+
+    @include for-not-large-desktop{
+        .team{
+            .container{
+                flex-wrap: wrap;
+        }
+    }
+    }
