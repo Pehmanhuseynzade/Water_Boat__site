@@ -1,0 +1,19 @@
+.other-section{
+    width: 100%;
+    .other-infotmations{
+        @extend %center-div;
+        gap: 50px;
+        .inf-icons{
+            font-size: 50px;
+            color: $info-icon-color;
+        }
+        p{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 20px;
+            font-weight: 2;
+        }
+        .for-margin{
+            margin-top: 25px;
+        }
+    }
+}

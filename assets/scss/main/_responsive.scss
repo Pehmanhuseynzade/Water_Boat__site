@@ -64,3 +64,12 @@
             justify-content: center;
         }
 }}
+
+@include for-not-large-desktop{
+    .other-section{
+        .other-infotmations{
+            flex-wrap: wrap;
+        }
+    }
+}
+

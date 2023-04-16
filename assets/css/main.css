@@ -1,4 +1,4 @@
-main #carousel .button, main #carousel p, main #carousel .title, header .navbar, header .information {
+.other-section .other-infotmations, main #carousel .button, main #carousel p, main #carousel .title, header .navbar, header .information {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,6 +208,25 @@ section #hero .about-us .learn button a {
   color: white;
 }
 
+.other-section {
+  width: 100%;
+}
+.other-section .other-infotmations {
+  gap: 50px;
+}
+.other-section .other-infotmations .inf-icons {
+  font-size: 50px;
+  color: #1089ff;
+}
+.other-section .other-infotmations p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 2;
+}
+.other-section .other-infotmations .for-margin {
+  margin-top: 25px;
+}
+
 @media (max-width: 992px) {
   header .information {
     justify-content: space-around;
@@ -255,5 +274,10 @@ section #hero .about-us .learn button a {
   section #hero {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .other-section .other-infotmations {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */
