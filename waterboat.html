@@ -36,22 +36,22 @@
                 <div class="info">
                     <div class="headicon"><i class="fa-solid fa-location-arrow"></i></div>
                     <div class="headinfo">
-                        <h3>San Francisco</h3>
-                        <p>Mountain View, Fake st., CA</p>
+                        <h3 class="up_text">San Francisco</h3>
+                        <p class="bot_text">Mountain View, Fake st., CA</p>
                     </div>
                 </div>
                 <div class="info">
                     <div class="headicon"><i class="fa-solid fa-phone"></i></div>
                     <div class="headinfo">
-                        <h3>000 209 392 312</h3>
-                        <p>Toll free</p>
+                        <h3 class="up_text">000 209 392 312</h3>
+                        <p class="bot_text">Toll free</p>
                     </div>
                 </div>
                 <div class="info">
                     <div class="headicon"><i class="fa-regular fa-envelope"></i></div>
                     <div class="headinfo">
-                        <h3>San Francisco</h3>
-                        <p>Mountain View, Fake st., CA</p>
+                        <h3 class="up_text">info@gmail.com</h3>
+                        <p class="bot_text">Mountain View, Fake st., CA</p>
                     </div>
                 </div>
             </div>
@@ -239,51 +239,50 @@
                     <div class="h_line"></div>
                     <div class="form">
                         <form>
-                            <div class="name-number">
-                            <div class="name">
-                                <label for="name">Full Name:</label>
-                                <input type="text" name="name" id="name" required>
+                            <div class="name-number wrap_on_tablet">
+                                <div class="name">
+                                    <label for="name">Full Name:</label>
+                                    <input type="text" name="name" id="name" required>
                                 </div>
                                 <div class="number">
-                                <label for="number">Number Of People:</label>
-                                <input  type="text" name="number" id="number"  required>
+                                    <label for="number">Number Of People:</label>
+                                    <input  type="text" name="number" id="number"  required>
                                 </div>
                             </div>
-                        </div>
+                        
 
-                        <div class="date">
-                       <div class="from">
-                         <label for="name">Date From:</label>
-                        <input id="date" type="date" required>
-                    </div>
+                            <div class="date wrap_on_tablet">
+                                <div class="from">
+                                    <label for="name">Date From:</label>
+                                    <input id="date" type="date" required>
+                                </div>
 
-                       <div class="to">
-                        <label for="name">Date To:</label>
-                        <input id="date" type="date" required>
-                    </div>
+                                <div class="to">
+                                    <label for="name">Date To:</label>
+                                    <input id="date" type="date" required>
+                                </div>
                             </div>
-                            <div class="options">
-                                <h2>Yacht You're Interested in:</h2>
+                            <div class="options wrap_on_tablet">
+                                <label for="option">Yacht You're Interested in:</label>
                                 <select id="option" name="option">
                                     <option value="Motor Yacth">Motor Yacth</option>
                                     <option value="Hi-Speed Yacth">Hi-Speed Yacth</option>
                                     <option value="Premium Yacth">Premium Yacth</option>
-                                    </select>
-
-                                    <div class="mail-phone">
-                                        <div class="mail">
-                                            <label for="email">Email:</label>
-                                            <input  type="email" name="email">
-                                        </div>
-                                        <div class="phone">
-                                        <label for="mobile">Mobile:</label>
-                                        <input type="tel" name="mobile" maxlength="10">
-                                        </div>
-                                    </div>
-                                    <div class="notes">
-                                        <h2>Notes:</h2>
-                                        <textarea  name="notes" id="notes"></textarea>
-                                    </div>
+                                </select>
+                            </div>
+                            <div class="mail-phone wrap_on_tablet">
+                                <div class="mail">
+                                    <label for="email">Email:</label>
+                                    <input  type="email" name="email">
+                                </div>
+                                <div class="phone wrap_on_tablet">
+                                    <label for="mobile">Mobile:</label>
+                                    <input type="tel" name="mobile" maxlength="10">
+                                </div>
+                            </div>
+                            <div class="notes">
+                                <label>Notes:</label>
+                                <textarea  name="notes" id="notes"></textarea>
                             </div>
                             <div class="row">
                                 <input type="submit" value="BOOK NOW">
@@ -292,6 +291,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <div class="our-team">
         <p>Team</p>
@@ -424,21 +424,53 @@
         </div>
     </section>
 
+    <footer>
+        <div class="footer-part">
+            <div class="line1">
+                <img style="height: 100px; width: 100px;" src="https://preview.colorlib.com/theme/waterboat/images/logo.png" alt="boat">
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>consectetur adipisicing elit. Beatae</p>
+                <p>nemo minima qui dolor, iusto iure</p>
+                <br>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="line2">
+                <h3>OUR COMPANY</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </div>
+            <div class="line3">
+                <h3>OUR SERVICES</h3>
+                <ul>
+                    <li><a href="#">Industrial</a></li>
+                    <li><a href="#">Construction</a></li>
+                    <li><a href="#">Remodeling</a></li>
+                </ul>
+            </div>
+            <div class="line4">
+                <h3>CONTACT</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Support Community</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Our Partners</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="color:gray;text-align: center;padding-bottom: 30px;"><p>Copyright ©2023 All rights reserved | This template is made with &#x2764;  by <a href="#">Colorlib</a></p></div>
+    </footer>
+
+
 </body>
 
 </html>
 
 
-        <!-- <div class="cust-info">
-            <div class="cust-child">
-                <div class="info info1">
-                    <img src="https://preview.colorlib.com/theme/waterboat/images/person_3_sq.jpg" alt="man">
-                </div>
-                <div class="info info2">
-                    <img src="https://preview.colorlib.com/theme/waterboat/images/person_4_sq.jpg" alt="man">
-                </div>
-                <div class="info info3">
-                    <img src="https://preview.colorlib.com/theme/waterboat/images/person_3_sq.jpg" alt="man">
-                </div>
-            </div>
-        </div> -->

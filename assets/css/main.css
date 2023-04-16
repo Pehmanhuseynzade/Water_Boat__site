@@ -1,3 +1,9 @@
+footer .footer-part {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .contact_us #contact .mytext .button, .contact_us #contact .mytext p, .contact_us #contact .mytext h1, .customers .customer .inf, .customers .customer, .cards .all--cards, .other-section .other-infotmations, main #carousel .button, main #carousel p, main #carousel .title, header .navbar, header .information {
   display: flex;
   justify-content: center;
@@ -43,6 +49,18 @@ header .information .infowords .info .headinfo h3 {
 header .information .infowords .info .headinfo p {
   font-family: "Roboto", sans-serif;
 }
+header .information .infowords .info .headinfo .up_text {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+header .information .infowords .info .headinfo .bot_text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: gray;
+  font-weight: 300;
+}
 header .information .hamburger {
   display: none;
   font-size: 20px;
@@ -57,6 +75,7 @@ header .navbar {
 header .navbar a {
   color: white;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 header .navbar .after::after {
   content: " ";
@@ -230,7 +249,7 @@ section #hero .about-us .learn button a {
 .statistic {
   width: 100%;
 }
-.statistic #static-info #photo {
+.statistic #static-info {
   width: 100%;
   height: 220px;
   margin-top: 30px;
@@ -241,19 +260,15 @@ section #hero .about-us .learn button a {
   position: relative;
   display: flex;
   justify-content: center;
+}
+.statistic #static-info #photo {
+  position: relative;
+  display: flex;
+  justify-content: center;
   align-items: center;
   color: white;
   gap: 50px;
   font-weight: bold;
-}
-.statistic #static-info #photo::after {
-  position: absolute;
-  content: "";
-  height: 220px;
-  width: 100%;
-  display: block;
-  background-color: rgba(0, 0, 255, 0.267);
-  z-index: 0;
 }
 .statistic #static-info #photo h2 {
   font-size: 40px;
@@ -263,6 +278,15 @@ section #hero .about-us .learn button a {
   font-weight: bold;
   font-size: 20px;
   z-index: 99;
+}
+.statistic #static-info::after {
+  position: absolute;
+  content: "";
+  height: 220px;
+  width: 100%;
+  display: block;
+  background-color: rgba(0, 0, 255, 0.267);
+  z-index: 0;
 }
 
 .title_destinations {
@@ -381,22 +405,28 @@ section #hero .about-us .learn button a {
   font-family: "Poppins", sans-serif;
 }
 .form-part .form-and-image .form form .name-number {
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
   display: flex;
   gap: 10px;
 }
+.form-part .form-and-image .form form .name-number .name {
+  width: 100%;
+}
 .form-part .form-and-image .form form .name-number .name label {
-  font-size: 30px;
+  font-size: 16px;
 }
 .form-part .form-and-image .form form .name-number .name input[type=text] {
-  width: 60%;
+  width: 100%;
   padding: 12px 20px;
   box-sizing: border-box;
 }
 .form-part .form-and-image .form form .name-number .number {
-  font-size: 30px;
+  width: 100%;
 }
 .form-part .form-and-image .form form .name-number input[type=text] {
-  width: 50%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -406,25 +436,29 @@ section #hero .about-us .learn button a {
   font-family: "Poppins", sans-serif;
   margin-top: 10px;
   display: flex;
+  gap: 10px;
+}
+.form-part .form-and-image .date .from {
+  width: 100%;
 }
 .form-part .form-and-image .date .from label {
-  font-size: 30px;
+  font-size: 16px;
 }
 .form-part .form-and-image .date .from input[type=date] {
   margin-top: 8px;
-  width: 70%;
+  width: 100%;
   padding: 12px 20px;
   box-sizing: border-box;
 }
 .form-part .form-and-image .date .to {
-  margin-left: 52px;
+  width: 100%;
 }
 .form-part .form-and-image .date .to label {
-  font-size: 30px;
+  font-size: 16px;
 }
 .form-part .form-and-image .date .to input[type=date] {
   margin-top: 8px;
-  width: 90%;
+  width: 100%;
   padding: 12px 20px;
   box-sizing: border-box;
 }
@@ -433,9 +467,12 @@ section #hero .about-us .learn button a {
   font-family: "Poppins", sans-serif;
   margin-top: 10px;
 }
+.form-part .form-and-image .options label {
+  font-size: 16px;
+}
 .form-part .form-and-image .options select {
   margin-top: 8px;
-  width: 75%;
+  width: 100%;
   padding: 16px 20px;
   border: 1px solid gray;
   border-radius: 4px;
@@ -446,35 +483,42 @@ section #hero .about-us .learn button a {
   font-family: "Poppins", sans-serif;
   margin-top: 10px;
   display: flex;
+  gap: 10px;
+}
+.form-part .form-and-image .mail-phone .mail {
+  width: 100%;
 }
 .form-part .form-and-image .mail-phone .mail label {
-  font-size: 30px;
+  font-size: 16px;
 }
 .form-part .form-and-image .mail-phone .mail input[type=email] {
   margin-top: 8px;
-  width: 90%;
+  width: 100%;
   padding: 12px 20px;
   box-sizing: border-box;
 }
 .form-part .form-and-image .mail-phone .phone {
-  margin-left: 52px;
+  width: 100%;
 }
 .form-part .form-and-image .mail-phone .phone label {
-  font-size: 30px;
+  font-size: 16px;
 }
 .form-part .form-and-image .mail-phone .phone input[type=tel] {
   color: gray;
   font-family: "Poppins", sans-serif;
   margin-top: 8px;
-  width: 90%;
-  padding: 12px 20px;
+  width: 100%;
+  padding: 10px 20px;
   box-sizing: border-box;
 }
 .form-part .form-and-image .notes {
-  margin-top: 20px;
+  color: gray;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  width: 100%;
 }
 .form-part .form-and-image .notes textarea {
-  width: 620px;
+  width: 100%;
   height: 200px;
   color: gray;
   font-family: "Poppins", sans-serif;
@@ -729,6 +773,58 @@ section #hero .about-us .learn button a {
   color: white;
 }
 
+footer {
+  width: 100%;
+  margin-top: 100px;
+  background-color: #f8f9fa;
+}
+footer .footer-part .line1 p {
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
+}
+footer .footer-part .line2 {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 50px;
+  line-height: 2;
+}
+footer .footer-part .line2 h3::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  border: 1px solid #1089ff;
+}
+footer .footer-part .line2 a {
+  color: #1089ff;
+}
+footer .footer-part .line3 {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 150px;
+  line-height: 2;
+}
+footer .footer-part .line3 h3::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  border: 1px solid #1089ff;
+}
+footer .footer-part .line3 a {
+  color: #1089ff;
+}
+footer .footer-part .line4 {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 100px;
+  line-height: 2;
+}
+footer .footer-part .line4 h3::after {
+  content: " ";
+  display: block;
+  width: 80%;
+  border: 1px solid #1089ff;
+}
+footer .footer-part .line4 a {
+  color: #1089ff;
+}
+
 @media (max-width: 992px) {
   header .information {
     justify-content: space-around;
@@ -765,6 +861,25 @@ section #hero .about-us .learn button a {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .wrap_on_tablet {
+    flex-wrap: wrap;
+  }
+  .form-part .form-and-image .form {
+    padding: 10px;
+  }
+  .form-part .form-and-image {
+    flex-wrap: wrap;
+  }
+  .customer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .customers .customer .inf {
+    height: 200px;
+  }
+  .contact_us {
+    margin-top: 65px;
+  }
 }
 @media (max-width: 576px) {
   section #image {
@@ -776,6 +891,25 @@ section #hero .about-us .learn button a {
   section #hero {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .wrap_on_tablet {
+    flex-wrap: wrap;
+  }
+  .form-part .form-and-image .form {
+    padding: 10px;
+  }
+  .form-part .form-and-image {
+    flex-wrap: wrap;
+  }
+  .customer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .customers .customer .inf {
+    height: 200px;
+  }
+  .contact_us {
+    margin-top: 65px;
   }
 }
 @media (max-width: 992px) {
@@ -827,5 +961,15 @@ section #hero .about-us .learn button a {
 @media (max-width: 992px) {
   .team .container {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .customers .inf blockquote {
+    flex-wrap: wrap !important;
+  }
+}
+@media (max-width: 992px) {
+  footer .footer-part {
+    flex-wrap: wrap !important;
   }
 }/*# sourceMappingURL=main.css.map */

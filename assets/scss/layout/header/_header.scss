@@ -10,25 +10,38 @@ header{
             .info{
                 display: flex;
                 gap: 20px;
-            .headicon{
-                width: 40px;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                background-color: $icon-bcg-color;
-                color: white;
-            }
-                            .headinfo{
+                .headicon{
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: $icon-bcg-color;
+                    color: white;
+                }
+                .headinfo{
                     h3{
                         font-family: $adress-font;
                     }
                     p{
                         font-family: $location-font;
                     }
+                    .up_text{
+                        font-size: 1.2rem;
+                        color: #000;
+                        margin-bottom: 0;
+                        font-weight: 900;
+                    }
+                    .bot_text{
+                        font-size: 1rem;
+                        line-height: 1.7;
+                        color: gray;
+                        font-weight: 300;
+                    }
                 }
-        }}
+            }
+        }
         .hamburger{
             display: none;
             font-size: 20px;
@@ -47,6 +60,7 @@ header{
     a{
         color: white;
         font-family: $nav-font;
+        font-size: 16px;    
     }
     .after::after{
         content: " ";
