@@ -113,3 +113,10 @@
     }
 }
 
+@include for-not-large-desktop{
+    .cards{
+        .all--cards{
+            flex-wrap: wrap;
+    }
+}
+}

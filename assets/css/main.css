@@ -1,4 +1,4 @@
-.other-section .other-infotmations, main #carousel .button, main #carousel p, main #carousel .title, header .navbar, header .information {
+.cards .all--cards, .other-section .other-infotmations, main #carousel .button, main #carousel p, main #carousel .title, header .navbar, header .information {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,6 +265,81 @@ section #hero .about-us .learn button a {
   z-index: 99;
 }
 
+.title_destinations {
+  width: 100%;
+}
+.title_destinations .destinations {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+.title_destinations .destinations p {
+  font-family: "Dancing Script", cursive;
+  color: #1089ff;
+}
+.title_destinations .destinations .y_line {
+  border-bottom: 3px solid #1089ff;
+  width: 100px;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.cards {
+  background-color: #f8f9fa;
+  width: 100%;
+}
+.cards .all--cards {
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 60px;
+}
+.cards .all--cards .card {
+  width: 390px;
+  height: 380px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cards .all--cards .card .country {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+.cards .all--cards .card .country .price-calendar {
+  display: flex;
+  justify-content: space-between;
+}
+.cards .all--cards .card .country a {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-left: 15px;
+}
+.cards .all--cards .card .country .loc {
+  color: #1089ff;
+  font-size: 20px;
+}
+.cards .all--cards .card img {
+  width: 390px;
+  height: 300px;
+  background-size: cover;
+}
+.cards .all--cards .card .price-calendar .fa-calendar-minus {
+  font-size: 20px;
+  color: gray;
+}
+.cards .all--cards .card .price-calendar .calendar {
+  color: gray;
+  font-size: 20px;
+}
+.cards .all--cards .card .price-calendar .price button {
+  width: 70px;
+  height: 30px;
+  background-color: #1089ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
 @media (max-width: 992px) {
   header .information {
     justify-content: space-around;
@@ -347,5 +422,10 @@ section #hero .about-us .learn button a {
   .statistic #photo::after {
     height: 450px !important;
     display: block;
+  }
+}
+@media (max-width: 992px) {
+  .cards .all--cards {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */

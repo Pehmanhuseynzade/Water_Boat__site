@@ -1,0 +1,84 @@
+.title_destinations{
+    width: 100%;
+    .destinations{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+        p{
+            font-family: 'Dancing Script', cursive;
+            color:$some-word-color;
+        }
+        .y_line{
+            border-bottom: 3px solid $nav-bcg-color;
+            width: 100px;
+            margin: auto;
+            padding-top: 15px;
+        }
+    }
+}
+
+
+
+.cards{
+    background-color: #f8f9fa;
+    width: 100%;
+    .all--cards{
+        @extend    %center-div;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 60px;
+        .card{
+            width: 390px;
+            height: 380px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            .country{
+                margin-left: 20px;
+                margin-top: 8px;
+                .price-calendar{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                a{
+                    color: black;
+                    font-family: $nav-font;
+                    font-size: 20px;
+                    margin-left: 15px;
+                }
+                .loc{
+                    color: $icon-bcg-color;
+                    font-size: 20px;
+                }
+            }
+            img{
+                width: 390px;
+                height: 300px;
+                background-size: cover;
+            }
+            .price-calendar{
+
+                .fa-calendar-minus{
+                    font-size: 20px;
+                    color: gray;
+                }
+                .calendar{
+                    color: gray;
+                    font-size: 20px;
+                }
+                .price{
+                    button{
+                        width: 70px;
+                        height: 30px;
+                        background-color: $icon-bcg-color;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 18px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}
